@@ -1,0 +1,34 @@
+.TH lambda 3
+.SH NAME
+lambda, l \- functional programming macros for C
+.SH SYNOPSIS
+.nf
+.B #include <clambda.h>
+.sp
+.BI "#define lambda(" R ", " P ", ...)"
+.br
+.BI "#define l(" P ", ...)"
+.ad
+.SH DESCRIPTION
+The macro
+.BR lambda
+creates a local function with parameters
+.I P
+and return type
+.I R
+from the code passed as `...`.
+The macro
+.BR l
+is a shortcut for a
+.BR lambda
+with a
+.BR void
+return type.
+.SH AUTHOR
+Written by Christian Hujer.
+.SH COPYRIGHT
+Copyright \(co 2015 Christian Hujer.
+License: LGPLv3+: GNU LGPL version 3.0 or later <https://www.gnu.org/licenses/lgpl.html>.
+.br
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
