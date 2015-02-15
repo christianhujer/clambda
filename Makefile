@@ -17,7 +17,7 @@ all:
 ## Installs clambda on your system.
 install:
 	install -d $(INCDIR)
-	install -t $(INCDIR) clambda.h
+	install -t $(INCDIR) include/clambda.h
 
 .PHONY: uninstall
 ## Removes clambda from your system.
